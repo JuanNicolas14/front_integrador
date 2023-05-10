@@ -74,6 +74,17 @@ header h3 {
   align-items: center;
 }
 
+.menu-icono {
+  display: none;
+}
+
+.menu-icono button {
+  border: none;
+  margin: 7px auto;
+  font-size: 2rem;
+  color: #FF4500;
+}
+
 .botones-logueo button {
   width: 47.5%;
   height: 75%;
@@ -85,6 +96,62 @@ header h3 {
   border-radius: 7.5px;
 }
 
+/*-------------------- MENU MOVIL ---------------------*/
+.menu-movil{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 30%;
+  bottom: 0%;
+  background-color: white;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+}
+.menu-movil ul {
+  list-style: none;
+  color: var(--third-color);
+}
+.menu-movil li {
+  font-weight: 500;
+  margin: 20px 10px;
+}
+.menu-movil li:last-child{
+  padding-top: 20px;
+  margin-right: 10px;
+  border-top: 1px solid black;
+}
+.menu-movil .menu {
+  height: 50%;
+}
+.menu-movil .menu-container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
+  justify-content: flex-end;
+
+  background-color: var(--main-color);
+  color: white;
+}
+.menu-movil .menu-container button {
+  position: absolute;
+  top: 0;
+  margin: 10px;
+
+  border: none;
+  background-color: var(--main-color);
+  font-size: 1.5rem;
+  color: white;
+}
+.menu-movil h2 {
+  margin: 10px;
+}
 
 
 /*-------------------- HOME ---------------------*/
@@ -96,7 +163,6 @@ section{
 
 /* BUSQUEDA */
 .busqueda {
-  width: 100%;
   display: flex;
   justify-content: center;
   background-color: brown;
@@ -249,7 +315,6 @@ footer {
   position: sticky;
   bottom: 0;
   width: 100%;
-  z-index: 100;
   color: white;
   display: flex;
   justify-content: center;
@@ -345,6 +410,12 @@ footer section div img {
 
 /*TABLETS Y TELEFONOS MAS GRANDES*/
 @media (max-width: 768px) {
+
+  /*------------------- HEADER -------------------*/
+  .botones-logueo button{
+    font-size: .7rem;
+  }
+
   /*-------------------- HOME ---------------------*/
   
   main {
@@ -357,6 +428,7 @@ footer section div img {
   }
   .busqueda h2 {
     margin: 15px auto;
+    text-align: center;
   }
 
   .busqueda form {
@@ -385,6 +457,18 @@ footer section div img {
   .recomendados article{
     width: 100%;
   }
+
+  /*------------------------ FOOTER --------------------*/
+  .social-media {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .social-media img {
+    margin: 5px 22px;
+  }
+  .social-media .logo {
+    margin: 5px 10px;
+  }
 }
 
 @media (max-width:700px) {
@@ -406,10 +490,33 @@ footer section div img {
     width: 75%;
     height: 40px;
   }
+
+  /*--------------- FOOTER --------------*/
+  .copyright {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .copyright h4, .copyright p {
+    margin: 0 auto
+  }
+
+  .social-media img {
+    margin: 5px 20px;
+  }
 }
 
 /* TELEFONOS PEQUEÑOS */
 @media (max-width: 480px) {
+  /*-------------------- HEADER ---------------------*/
+  .botones-logueo {
+    display: none;
+  }
+
+  .menu-icono {
+    display: block;
+  }
+  
 
   /*-------------------- HOME ---------------------*/
   /* BUSQUEDA */
@@ -476,4 +583,32 @@ footer section div img {
     height: 30px;  
     margin: 10px auto 20px;
   }
+
+  /*--------------- FOOTER --------------*/
+  .copyright {
+    max-width: 60%;
+    align-items: start;
+    font-size: .8rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .copyright h4 {
+    font-size: .7rem;
+  }
+
+  .copyright h4, .copyright p {
+    margin: 0;
+  }
+
+  .social-media img {
+    margin: 5px;
+  }
 }
+
+@media (max-width: 360px){
+  .social-media img {
+    width: 17px;
+    height: 17px;
+  }
+}
+
