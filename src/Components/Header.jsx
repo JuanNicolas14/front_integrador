@@ -30,10 +30,7 @@ const Header = () => {
           <button>Iniciar sesión</button>
         </div>
         {show 
-        ? <div className='menu-icono'>
-            <button onClick={showMenu}><HiMenu /></button>
-          </div>
-        : <div className='menu-movil'>
+        ? <div className='menu-movil'>
             <div className="menu">
               <div className='menu-container'>
                 <button onClick={showMenu}><GrClose/></button>
@@ -54,6 +51,11 @@ const Header = () => {
               <img className='logo' src={images.instagram} alt="icono-instagram" />
             </div>
           </div>
+        : (
+          <div className='menu-icono'>
+            <button onClick={showMenu}><HiMenu /></button>
+          </div>
+        )
         }
         
       </section>
