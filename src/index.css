@@ -1,0 +1,479 @@
+/*--------------- Variables css ---------------*/
+:root {
+  --main-color: #A52A2A;
+  --secondary-color:#FF4500;
+  --third-color: #383b58;
+}
+
+body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: var(--main-color);
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+main{
+  width: 100%;
+}
+
+/*-------------------- HEADER ---------------------*/
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid brown;
+}
+
+header section {
+  width: 95%;
+  height: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagotipo {
+  width: 20%;
+  display: flex;
+}
+
+.imagotipo img {
+  width: 45px;
+}
+
+.texto-logo {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  color: orangered;
+  margin: 0;
+}
+
+header h3 {
+  color: brown;
+  font-weight: lighter;
+  font-size: medium;
+  margin: 0;
+}
+
+.botones-logueo {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botones-logueo button {
+  width: 47.5%;
+  height: 75%;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  color: orangered;
+  background-color: white;
+  border: solid 1.5px orangered;
+  border-radius: 7.5px;
+}
+
+
+
+/*-------------------- HOME ---------------------*/
+section{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+/* BUSQUEDA */
+.busqueda {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: brown;
+  color: white;
+  height: 130px;
+}
+
+.busqueda div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.busqueda h2 {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.busqueda .formulario {
+  width: 100%;
+}
+
+.busqueda form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.busqueda input {
+  width: 25%;
+  margin: 0 10px;
+  height: 29px;
+  border: none;
+  border-radius: 5px;
+}
+
+.busqueda button {
+  width: 25%;
+  height: 32px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: orangered;
+}
+
+/* CATEGORIAS */
+.categorias {
+  max-width: 95%;
+}
+
+.listado-categorias{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.categorias .descripcion {
+  margin: 10px;
+}
+.categorias article {
+  width: 22.5%;
+  margin: 0 8px 30px;
+  border-radius: 5%;
+  -webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.47);
+  -moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.47);
+  box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.47);
+  height: 230;
+}
+.categorias img {
+  object-fit: cover;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+  width: 100%;
+  height: 70%;
+}
+
+.categorias .descripcion {
+  padding: 0 0 10px 20px;
+  margin: 0;
+}
+
+.categorias h3 {
+  margin: 3px 0;
+  font-size: 1rem;
+  color: var(--main-color);
+}
+.categorias .descripcion p {
+  margin:10px 0;
+  font-size: .9rem;
+  color: var(--third-color);
+}
+
+/* RECOMENDACIONES */
+
+.recomendados{
+  max-width: 95%;
+}
+
+.listado-recomendados {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.recomendados article{
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+  height: 275px;
+  margin: 20px;
+  border-radius:10px;
+  -webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.47);
+  -moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.47);
+  box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.47);
+}
+.recomendados img {
+  object-fit: cover;
+  width: 45%;
+  border-radius: 10px;
+}
+.recomendados .descripcion {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.recomendados .descripcion p,.recomendados .descripcion h2{
+  color: var(--third-color);
+}
+.recomendados button {
+  width: 90%;
+  height: 15%;
+  margin: 30px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--secondary-color);
+}
+
+/* FOOTER */
+footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+h4 {
+  color: white;
+  font-weight: lighter;
+  font-size: small;
+}
+
+footer section {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer section div img {
+  width: 25px;
+  height: 25px;
+}
+
+.social-media{
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*TABLETS Y TELEFONOS MAS GRANDES*/
+@media (max-width: 1024px) {
+
+  /* BUSQUEDA */
+  .busqueda input {
+    width: 33%;
+  }
+
+  /* CATEGORIAS */
+  section {
+    padding: 20px;
+    max-width: 100%;
+  }
+  .categorias article {
+    width: 30%;
+    margin: 0 8px 30px;
+  }
+  .categorias img{
+    height: 150px;
+  }
+  .categorias article h3, .categorias article p{
+    margin: 0;
+  }
+  .categorias article h3 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  .categorias article p{
+    font-size: .8rem;
+  }
+  .listado-categorias{
+    width: 100%;
+  }
+
+  /* RECOMENDADAS */
+  .listado-recomendados{
+    justify-content: space-around;
+  }
+  .recomendados article {
+    width: 43%;
+    max-height: 240px;
+  }
+  .recomendados img {
+    object-fit: cover;
+  }
+  .recomendados article h2{
+    font-size: 1rem;
+  }
+  .recomendados article p{
+    font-size: .7rem;
+  }
+  .recomendados button {
+    margin: 30px auto;
+  }
+}
+
+/*TABLETS Y TELEFONOS MAS GRANDES*/
+@media (max-width: 768px) {
+  /*-------------------- HOME ---------------------*/
+  
+  main {
+    padding: 0px;
+  }
+
+  /* BUSQUEDA */
+  .busqueda {
+    height: auto;
+  }
+  .busqueda h2 {
+    margin: 15px auto;
+  }
+
+  .busqueda form {
+    flex-wrap: wrap;
+  }
+  .busqueda input {
+    width: 36%;
+    margin-bottom: 10px;
+  }
+  .busqueda button {
+    margin-bottom: 10px;
+  }
+
+  /* CATEGORIAS */
+  section {
+    max-width: 95%;
+  }
+  .categorias article{
+    width: 46%;
+  }
+
+  /* RECOMENDADAS */
+  .listado-recomendados{
+    padding: 0;
+  }
+  .recomendados article{
+    width: 100%;
+  }
+}
+
+@media (max-width:700px) {
+  .busqueda div {
+    width: 100%;
+  }
+  .busqueda h2 {
+    margin: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .busqueda form {
+    flex-direction: column;
+  }
+  .busqueda input {
+    width: 75%;
+  }
+  .busqueda button {
+    width: 75%;
+    height: 40px;
+  }
+}
+
+/* TELEFONOS PEQUEÑOS */
+@media (max-width: 480px) {
+
+  /*-------------------- HOME ---------------------*/
+  /* BUSQUEDA */
+  .busqueda {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .busqueda div {
+    width: 100%;
+  }
+  .busqueda input {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .busqueda button {
+    width: 90%;
+  }
+
+  /* CATEGORIAS */
+  main {
+    padding: 0;
+  }
+  section {
+    max-width: 95%;
+  }
+  .listado-categorias{
+    width: 100%;
+  }
+  .categorias article {
+    width: 98%;
+  }
+
+  /* RECOMENDADAS */
+  .listado-recomendados{
+    padding: 0;
+    width: 100%;
+    display: flex;
+  }
+  .recomendados article{
+    margin: 25px auto;
+    max-height: 400px;
+    width: 95%;
+
+    flex-direction: column;
+  }
+  .recomendados article img {
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .recomendados article p{
+    font-size: .7rem;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .recomendados article h2{
+    font-size: 1rem;
+    margin-bottom: 3px;
+  }
+  .recomendados button {
+    width: 70%;
+    height: 30px;  
+    margin: 10px auto 20px;
+  }
+}
