@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Link } from 'react-router-dom'
 import images from '../assets/images/images'
 import {HiMenu} from 'react-icons/hi'
 import {GrClose} from 'react-icons/gr'
@@ -17,13 +18,16 @@ const Header = () => {
   return (
     <header>
       <section>
-        <div class="imagotipo">
-          <img src={images.logoBukinFood} alt="icon-logo" />
-          <div class="texto-logo">
-            <h1>BukinFood</h1>
-            <h3>Memberships</h3>
+        <Link to='/home' style={{ textDecoration: 'none' }}>
+          <div class="imagotipo">
+            
+              <img src={images.logoBukinFood} alt="icon-logo" />
+              <div class="texto-logo">
+                <h1>BukinFood</h1>
+                <h3>Memberships</h3>
+              </div>
           </div>
-        </div>
+        </Link>
 
         <div class="botones-logueo">
           <button>Crear cuenta</button>

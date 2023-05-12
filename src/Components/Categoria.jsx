@@ -1,14 +1,21 @@
 import React from 'react'
-import images from '../assets/images/images'
+import { Link } from 'react-router-dom'
 import '../index.css'
 
-const Categoria = ({nombre}) => {
+const Categoria = ({nombre, dias, descripcion}) => {
   return (
     <article>
-        <img src={images.plato2} alt="Plato" />
-        <div className='descripcion'>
-          <h3>{nombre}</h3>
-          <p>Una descripcion breve....</p>
+        <div className='categoria-imagen'>
+          <div className="wrap">
+            <h2>{nombre}</h2>
+            <p>{descripcion}</p>
+            <p>⭐⭐⭐</p>
+          </div>
+        </div>
+        <div className='descripcion-button'>
+          <Link to='/restaurantes' style={{ textDecoration: 'none' }}>
+            <button>Ver restaurantes</button>
+          </Link>
         </div>
     </article>
   )

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Detalle = () => {
   return (
-    <div>Detalle</div>
+    <div>Detalle del restaurante, en desarrollo.</div>
   )
 }
 

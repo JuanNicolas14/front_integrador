@@ -7,11 +7,11 @@ const Producto = ({nombre}) => {
         <img src={images.plato1} alt="" />
         <div className='descripcion'>
             <div>
-                <p>Categoria</p>
+                <p>⭐⭐⭐⭐</p>
                 <h2>{nombre}</h2>
-                <p>Una descripcion sobre algun plato muy rico :V</p>
+                <p>Una descripcion del restaurante y el tipo de comida que oferta, una descripcion del restaurante y el tipo de comida que podrian estar sirviendo.</p>
             </div>
-            <button>Enviar</button>
+            <button>Ver mas</button>
         </div>
     </article>
   )
